@@ -3,13 +3,18 @@ from django.shortcuts import render
 
 def index(request):
     context ={
-        'titile': 'Home',
-        'content': 'Главная страница магазина - TopCaseOm',
+        'titile': 'TopCase - Главная',
+        'content': 'TopCaseOm',
         'list': ['first', 'second'],
-        'dict': {'first': 1, 'second': 2},
-        'is_authenticated': True
+
     }
     return render(request, 'main/index.html', context)
 
-def about(request) -> HttpResponse:
-    return HttpResponse('About page')
+def about(request):
+    context ={
+        'titile': 'TopCase - О нас',
+        'content': 'О нас',
+        'text_on_page': 'Наш магазин, TopCase, Эксперт в подборе аксессуаров к мобильной технике, технике для дома, автомобиля и офиса. Мы предоставляем огромный ассортимент по доступным ценам.TopCase - только оригинальные вещи -лучшее для Вас! :)',
+    }
+
+    return render(request, 'main/about.html', context)
