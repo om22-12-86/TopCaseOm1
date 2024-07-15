@@ -26,7 +26,7 @@ SECRET_KEY = 'django-insecure-j85c$oe_n6v#{% load nfvnxvfg_tags %}6u!v0b0emfs*i_
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = []
+ALLOWED_HOSTS = ['*']
 
 
 # Application definition
@@ -47,6 +47,7 @@ INSTALLED_APPS = [
     'goods',
     'users',
     'carts',
+    'orders',
 
 
 ]
@@ -156,3 +157,4 @@ INTERNAL_IPS = [
 DEFAULT_AUTO_FIELD = 'django.db.models.BigAutoField'
 AUTH_USER_MODEL = 'users.User'
 LOGIN_URL = '/user/login/'
+LOGIN_REDIRECT_URL = '/'
