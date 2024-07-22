@@ -26,3 +26,26 @@ class AboutView(TemplateView):
         context['title'] = 'TopCase - О нас'
         context['content'] = "О нас"
         context['text_on_page'] = 'Наш магазин, TopCase, Эксперт в подборе аксессуаров к мобильной технике, технике для дома, автомобиля и офиса. Мы предоставляем огромный ассортимент по доступным ценам.TopCase - только оригинальные вещи -лучшее для Вас!:)',
+
+
+class ContactsView(TemplateView):
+    template_name = 'main/contacts.html'
+
+    def get_context_data(self, **kwargs):
+        context = super().get_context_data(**kwargs)
+        context['title'] = 'TopCase - О нас'
+        context['content'] = "О нас"
+        context['text_on_page'] = 'Наш магазин, TopCase, Эксперт в подборе аксессуаров к мобильной технике, технике для дома, автомобиля и офиса. Мы предоставляем огромный ассортимент по доступным ценам.TopCase - только оригинальные вещи -лучшее для Вас!:)',
+
+
+class PaymentView(TemplateView):
+    template_name = 'main/payment.html'
+
+    def get_context_data(self, **kwargs):
+        context = super().get_context_data(**kwargs)
+        context['title'] = 'TopCase - О нас'
+        context['content'] = "О нас"
+        context['text_on_page'] = 'Наш магазин, TopCase, Эксперт в подборе аксессуаров к мобильной технике, технике для дома, автомобиля и офиса. Мы предоставляем огромный ассортимент по доступным ценам.TopCase - только оригинальные вещи -лучшее для Вас!:)',
+
+
+

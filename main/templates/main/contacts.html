@@ -1,0 +1,32 @@
+{% extends "base.html" %}
+
+{% load static %}
+
+
+
+
+{% block css %}
+    <link rel="stylesheet" href="{% static 'deps/css/my_footer_css.css' %}">
+{% endblock %}
+
+{% block modal_cart %}
+{% include 'includes/cart_button.html' %}
+{%  endblock %}
+
+{% block content %}
+    <div class="mt-5 pt-5 bg-white custom-shadow rounded">
+        <h2 class="m-2"><strong>TopCase B2-249</strong></h2>
+    <p class="m-2">Мы работаем для Вас!Только качественный и оригенальный продукт к Вашему вниманию!Качество и стиль для Лучших!</p>
+    </div>
+
+{% endblock %}
+
+{% block footer %}
+    <footer class="py-4 bg-dark">
+        <div class="container">
+            <p class="m-0 text-center text-white">Top_CaseOm@gmail.com </p>
+        </div>
+    </footer>
+{% endblock %}
+
+
